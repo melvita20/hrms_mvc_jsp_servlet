@@ -1,0 +1,57 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>AuthenticateUserFilter</filter-name>
+  	<display-name>AuthenticateUserFilter</display-name>
+  	<description></description>
+  	<filter-class>com.capstone.mvc.hrms.filter.AuthenticateUserFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>AuthenticateUserFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>  
+  <servlet>
+  	<servlet-name>LoginController</servlet-name>
+  	<display-name>LoginController</display-name>
+  	<description></description>
+  	<servlet-class>com.capstone.mvc.hrms.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EmployeeController</servlet-name>
+  	<display-name>EmployeeController</display-name>
+  	<description></description>
+  	<servlet-class>com.capstone.mvc.hrms.controller.EmployeeController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DepartmentController</servlet-name>
+  	<display-name>DepartmentController</display-name>
+  	<description></description>
+  	<servlet-class>com.capstone.mvc.hrms.controller.DepartmentController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SalaryController</servlet-name>
+  	<display-name>SalaryController</display-name>
+  	<description></description>
+  	<servlet-class>com.capstone.mvc.hrms.controller.SalaryController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginController</servlet-name>
+  	<url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeController</servlet-name>
+  	<url-pattern>/EmployeeController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DepartmentController</servlet-name>
+  	<url-pattern>/DepartmentController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SalaryController</servlet-name>
+  	<url-pattern>/SalaryController</url-pattern>
+  </servlet-mapping>
+</web-app>
